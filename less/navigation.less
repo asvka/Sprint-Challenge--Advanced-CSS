@@ -2,7 +2,7 @@
 nav{
     .displayFlex(center, center);
     flex-direction: column;
-    border-bottom: 1px solid lightgrey;
+    // border-bottom: 1px solid lightgrey;
     h1{
         padding-top: 1%;
         font-size: 4em;
@@ -21,11 +21,16 @@ nav{
         text-decoration: none;
         padding-left: 5%;
         padding-right: 5%;
+        &:hover{
+            opacity: 0.1;
+            transition: 0.1s;
+        }
         }
         @media @phone {
             font-size:1em;
             .displayFlex(space-evenly, center);
             width: 100%;
+
         }
     }
 }
