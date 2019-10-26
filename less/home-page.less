@@ -11,7 +11,9 @@
     p {
       padding:0 15px;
     }
-  
+    img{
+      .roundedEdges(10px);
+    }
   }
 
   .space-images {
@@ -58,13 +60,18 @@
       }
 
       .btn {
+        .btnProp(white,black, center, 10px, 40%, 0.5px solid black);
+        .roundedEdges(10px);
+        &:hover{
+          .btnProp(black, white, center, 10px, 40%, 0.5px solid black);
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;

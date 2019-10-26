@@ -1,1 +1,17 @@
 // Mixins Here
+.displayFlex(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+.roundedEdges(@radius){
+    border-radius: @radius;
+}
+.btnProp(@color, @bgcolor, @cent, @padd, @btnWidth){
+    color: @color;
+    background-color: @bgcolor;
+    text-align: @cent;
+    padding: @padd;
+    width: @btnWidth;
+
+}
