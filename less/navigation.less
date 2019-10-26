@@ -9,7 +9,7 @@ nav{
     }
     ul{
         margin: 0;
-        width: 90%;
+        width: 50%;
         .displayFlex(space-evenly, center);
         flex-direction: row;
         padding-top: 2%;
@@ -21,6 +21,11 @@ nav{
         text-decoration: none;
         padding-left: 5%;
         padding-right: 5%;
+        }
+        @media @phone {
+            font-size:1em;
+            .displayFlex(space-evenly, center);
+            width: 100%;
         }
     }
 }
